@@ -15,3 +15,6 @@ app.listen(port,() =>{
 })
 
 
+app.use((req,resp,next)=>{
+    resp.send('hello world')
+});
